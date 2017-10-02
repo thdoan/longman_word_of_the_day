@@ -15,7 +15,7 @@ function initDatabase(callback) {
 
 function updateRow(db, values) {
   // Insert some data.
-  var statement = db.prepare('INSERT INTO data(word,definition) VALUES(?,?)');
+  var statement = db.prepare('INSERT INTO data VALUES(?,?)');
   statement.run(values);
   statement.finalize();
 }
