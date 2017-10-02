@@ -47,7 +47,7 @@ function run(db) {
     values.push(($('#wotd .title_entry a').text().trim())); // Word
     values.push(($('#wotd .ldoceEntry a').text().trim()));  // Definition
     updateRow(db, values);
-    //readRows(db);
+    readRows(db);
     db.close();
   });
 }
